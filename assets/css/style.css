@@ -8,25 +8,26 @@
 
 .header {
     color: rgb(207, 207, 200);
-    font-size: 15px;
     width: 100%;
     height: 10vh;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .header img {
     width: 40px;
-    padding: 3px;
+    padding: 4px;
 }
 
 .header h3 {
-    width: 450px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
 }
 
-.navbar {
+.navbarweb {
     display: flex;
     position: sticky;
     top: 0;
@@ -36,14 +37,14 @@
     justify-content: center;
 }
 
-.navbar ul li {
+.navbarweb ul li {
     display: inline;
     width: 100%;
     padding: 5px;
 
 }
 
-.navbar ul li a {
+.navbarweb ul li a {
     color: rgb(230, 116, 90);
     list-style: none;
     text-decoration: none;
@@ -51,7 +52,7 @@
 
 }
 
-.navbar ul :hover {
+.navbarweb ul :hover {
     background-color: black;
     transition: 1s;
     font-size: 22px;
@@ -76,7 +77,7 @@
 }
 
 .main {
-    color: rgb(207, 207, 200);
+    color:rgb(96, 103, 103);
 }
 
 
@@ -137,14 +138,11 @@
     border-radius: 20px;
 }
 
-.footer__barra div{
-    
-}
 .footer__barra {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 500px auto auto;
-       
+
 }
 
 
@@ -166,10 +164,11 @@
     margin: 20px;
 }
 
-.footer__whatsapp:hover{
+.footer__whatsapp:hover {
     transform: scale(1.05);
     transition: 0.5s;
 }
+
 .footer__whatsapp :hover {
     color: white;
     font-size: 23px;
@@ -214,7 +213,8 @@ footer div a {
     padding-top: 25%;
     padding-left: 15%;
 }
-.mapa{
+
+.mapa {
     width: 90%;
 }
 
@@ -223,6 +223,7 @@ footer div a {
     transform: scale(1.5);
     transition: 0.5s;
 }
+
 .footer__index ul li:hover {
     transform: scale(1.05);
     transition: 0.5s ease-in-out;
@@ -268,7 +269,7 @@ footer div a {
 
 .main__productos {
     padding: 20px;
-    background-color: black;
+
 }
 
 .main__productos h2 {
@@ -312,9 +313,6 @@ footer div a {
     margin: 10px;
 }
 
-main {
-    background-color: rgb(0, 0, 0)
-}
 
 .productores {
     display: flex;
