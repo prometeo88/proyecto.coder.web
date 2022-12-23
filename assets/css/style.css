@@ -79,27 +79,8 @@
     color: rgb(96, 103, 103);
 }
 
-
-.main__mision h1 {
-    text-align: center;
-    padding: 25px;
-}
-
-.main__mision p {
-
-    margin: 20px;
-    text-align: center;
-    line-height: 40px;
-
-}
-
-.main__mision img {
-    max-width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-
+main > div > img {
+    width: 75%;
 }
 
 .carousel-caption {
