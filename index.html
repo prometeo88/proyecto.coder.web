@@ -17,13 +17,15 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__icon"><a href="./index.html"><img src="../assets/multimedia/Logo.png" alt="logo_ullua"></a>
+    <header class="container-fluid text-center">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 text-end align-items-center">
+                <a href="./index.html"><img src="../assets/multimedia/Logo.png" alt="logo_ullua"></a>
+            </div>
+            <div class="col-6 text-start align-items-center mb-0">
+                <h3 class="m-0">ULLUA PRODUCTORES ASESORES DE SEGUROS</h3>
+            </div>
         </div>
-        <div class="header__texto"></div>
-        <h3>ULLUA PRODUCTORES ASESORES DE SEGUROS</h3>
-        </div>
-
     </header>
     <!--Navegador Original
     <nav class="navbarweb">
@@ -41,7 +43,7 @@
 
     </nav>-->
 
-    <nav class="navbar navbar-expand-lg sticky-top bg-light" style="background-color:rgb(248, 249, 250);">
+    <nav class="navbar navbar-expand-lg sticky-top bg-light" style="background-color:rgb(248, 249, 250);color: black;">
         <div class="container-fluid">:
             <a class="navbar-brand" href="./index.html"><img src="./assets/multimedia/FU-Favicon-32x32.svg" width="30"
                     style="margin:0px 5px;" alt="logo">Inicio</a>
@@ -55,13 +57,13 @@
                         <a class="nav-link active" aria-current="page" href="./pages/seguros.html">Seguros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/productores.html">Productores</a>
+                        <a class="nav-link" style="color: #000000e6;" href="./pages/productores.html">Productores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/infoutil.html">Informacion Util</a>
+                        <a class="nav-link" style="color: #000000e6;" href="./pages/infoutil.html">Informacion Util</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link" style="color: #000000e6;" href="./pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -217,46 +219,45 @@
     </footer>
     -->
 
-<footer>
-    <div class="footer__barra">
-        <div >
-            <div class="footer__whatsapp">
-                <button type="button" class="btn btn-link">Link</button>
-                <a href="https://api.whatsapp.com/send?phone=543854855795&text=Hola!%20Quisiera%20consultar%20por%20un%20seguro%2C%20me%20puede%20ayudar%3F"
-                    target="_blank">
-                    <H3>Escribinos por Whatsapp!!</H3>
-                </a>
-                <a
-                    href="https://api.whatsapp.com/send?phone=543854855795&text=Hola!%20Quisiera%20consultar%20por%20un%20seguro%2C%20me%20puede%20ayudar%3F" target="_blank"><img
-                        src="./assets/multimedia/whatsapp_black.png" alt="whataspp_ico"></a>
+    <footer>
+        <div class="footer__barra">
+            <div>
+                <div class="footer__whatsapp">
+                    <button type="button" class="btn btn-link">Link</button>
+                    <a href="https://api.whatsapp.com/send?phone=543854855795&text=Hola!%20Quisiera%20consultar%20por%20un%20seguro%2C%20me%20puede%20ayudar%3F"
+                        target="_blank">
+                        <H3>Escribinos por Whatsapp!!</H3>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=543854855795&text=Hola!%20Quisiera%20consultar%20por%20un%20seguro%2C%20me%20puede%20ayudar%3F"
+                        target="_blank"><img src="./assets/multimedia/whatsapp_black.png" alt="whataspp_ico"></a>
+                </div>
+                <div class="footer__agenda"><img src="./assets/multimedia/qr-add-contact.png" alt="qr-add-contact">
+                    <h3>Escanea con el celular y agendanos!</h3>
+                </div>
             </div>
-            <div class="footer__agenda"><img src="./assets/multimedia/qr-add-contact.png" alt="qr-add-contact">
-                <h3>Escanea con el celular y agendanos!</h3>
+            <div class="footer__index">
+                <ul>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./pages/seguros.html">SEGUROS</a></li>
+                    <li><a href="./pages/productores.html">PRODUCTORES</a></li>
+                    <li><a href="./pages/infoutil.html">INFORMACION UTIL</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="footer__maps">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.4903489081105!2d-64.25749795168745!3d-27.813407751575173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b4defcd4c18b7%3A0x18c5a70e9e4d6085!2sEspa%C3%B1a%20721%2C%20G4200%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1669410160731!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="footer__maps__text">
+                    <img src="./assets/multimedia/location_black.png" alt="location_icon">
+                    <h4>España 721 - Los Inmigrantes - Santiago del Estero, Capital</h4>
+                </div>
             </div>
         </div>
-        <div class="footer__index">
-            <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./pages/seguros.html">SEGUROS</a></li>
-                <li><a href="./pages/productores.html">PRODUCTORES</a></li>
-                <li><a href="./pages/infoutil.html">INFORMACION UTIL</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </div>
-        <div class="footer__maps">
-            <iframe class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.4903489081105!2d-64.25749795168745!3d-27.813407751575173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b4defcd4c18b7%3A0x18c5a70e9e4d6085!2sEspa%C3%B1a%20721%2C%20G4200%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1669410160731!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="footer__maps__text">
-                <img src="./assets/multimedia/location_black.png" alt="location_icon">
-                <h4>España 721 - Los Inmigrantes - Santiago del Estero, Capital</h4>
-            </div>
-        </div>
-    </div>
 
 
-</footer>
+    </footer>
 
 
 

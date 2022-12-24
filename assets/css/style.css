@@ -4,6 +4,23 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     list-style: none;
+    text-decoration: none;
+}
+
+header {
+    color: rgb(207, 207, 200);
+    background-color: black;
+
+}
+
+header img {
+    width: 25px;
+}
+
+header h3 {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(207, 207, 200);
 }
 
 .header {
@@ -14,12 +31,12 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    height: 5vh;
+    height: 35px;
 
 }
 
 .header img {
-    width: 30px;
+    width: 25px;
     padding: 4px;
 }
 
@@ -79,14 +96,14 @@
     color: rgb(96, 103, 103);
 }
 
-main > div > img {
+main>div>img {
     width: 75%;
 }
 
 .carousel-caption {
     color: transparent;
     font-size: 20px;
-    background: linear-gradient(90deg, rgba(25,23,23,1) 0%, rgba(54,36,32,0.8239670868347339) 7%, rgba(230,116,90,0.7875525210084033) 35%, rgba(207,207,200,0.7287289915966386) 100%);
+    background: linear-gradient(90deg, rgba(25, 23, 23, 1) 0%, rgba(54, 36, 32, 0.8239670868347339) 7%, rgba(230, 116, 90, 0.7875525210084033) 35%, rgba(207, 207, 200, 0.7287289915966386) 100%);
     background-clip: content-box;
     -webkit-background-clip: content-box;
 }
