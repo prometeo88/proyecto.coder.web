@@ -97,9 +97,13 @@ header h3 {
     color: rgb(96, 103, 103);
 }
 
-main>div>img {
-    width: 75%;
+main div>img {
+    max-width: 1250px;
+    margin: auto   ;
 }
+
+
+
 
 .carousel-caption {
     color: transparent;
