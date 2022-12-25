@@ -14,7 +14,8 @@ header {
 }
 
 header img {
-    width: 25px;
+    width: 18px;
+        margin-bottom: 4px;
 }
 
 header h3 {
@@ -138,6 +139,15 @@ main>div>img {
 }
 
 /** FOOTER controlar tamaños**/
+
+footer div div h4{
+    font-size: 15px;
+}
+
+footer {
+    background-color: rgba(207, 207, 200, 0.7287289915966386);
+    border-radius: 20px;
+}
 .footer {
     background-color: rgb(230, 116, 90);
     border-radius: 20px;
