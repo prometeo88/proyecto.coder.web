@@ -6,51 +6,67 @@
     list-style: none;
     text-decoration: none;
 }
-.body {  display: grid;
+
+.body {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.01fr 0.1fr 1fr 1fr;
+    grid-template-rows: 0.01fr auto 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "header header header"
-      "navbarweb navbarweb navbarweb"
-      "main main main"
-      "footer footer footer";
-  }
-  
-  .header { grid-area: header; }
-  
-  .navbarweb { grid-area: navbarweb; }
-  
-  .main {  display: grid;
+        "header header header"
+        "navbar navbar navbar"
+        "main main main"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ".";
+        ".";
     grid-area: main;
-  }
-  
-  .footer {  display: grid;
+}
+
+.footer {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "footer__contactos footer__index footer__maps"
-      "footer__closer footer__closer footer__closer";
+        "footer__contactos footer__index footer__maps"
+        "footer__closer footer__closer footer__closer";
     grid-area: footer;
-  }
-  
-  .footer__contactos { grid-area: footer__contactos; }
-  
-  .footer__index { grid-area: footer__index; }
-  
-  .footer__closer { grid-area: footer__closer; }
-  
-  .footer__maps { grid-area: footer__maps; }
-  
+}
+
+.footer__contactos {
+    grid-area: footer__contactos;
+}
+
+.footer__index {
+    grid-area: footer__index;
+}
+
+.footer__closer {
+    grid-area: footer__closer;
+}
+
+.footer__maps {
+    grid-area: footer__maps;
+}
+
 header {
     color: rgb(207, 207, 200);
     background-color: black;
@@ -59,7 +75,8 @@ header {
 
 header img {
     width: 18px;
-    margin-bottom: 4px;
+    margin: 3px;
+    align-self: center;
 }
 
 header h3 {
@@ -80,11 +97,6 @@ header h3 {
 
 }
 
-.header img {
-    width: 25px;
-    padding: 4px;
-}
-
 .header h3 {
     font-size: 15px;
     text-align: center;
@@ -96,19 +108,19 @@ header h3 {
     position: sticky;
     top: 0;
     background-color: rgb(96, 103, 103);
-    height: 10vh;
+    height: 7vh;
     align-items: center;
     justify-content: center;
 }
 
-.navbarweb ul li {
+.navbarweb__menu ul li {
     display: inline;
     width: 100%;
     padding: 5px;
 
 }
 
-.navbarweb ul li a {
+.navbarweb__menu ul li a {
     color: rgb(230, 116, 90);
     list-style: none;
     text-decoration: none;
@@ -116,7 +128,7 @@ header h3 {
 
 }
 
-.navbarweb ul :hover {
+.navbarweb__menu ul :hover {
     background-color: black;
     transition: 1s;
     font-size: 22px;
@@ -136,18 +148,28 @@ header h3 {
     transition: .5s;
 }
 
+.navbarweb__menu Label,
+.navbarweb__menu input {
+    display: none;
+}
+
+/**grid productores**/
+
 
 .main {
     color: rgb(96, 103, 103);
+}
+
+.main h1,
+main p {
+    padding: 15px;
+    text-align: center;
 }
 
 main div>img {
     max-width: 1250px;
     margin: auto;
 }
-
-
-
 
 .carousel-caption {
     color: transparent;
@@ -169,7 +191,6 @@ main div>img {
     display: flex;
 
 }
-
 
 .main__tipoDeSeguros_personas img {
     max-width: 60vw;
@@ -265,8 +286,6 @@ footer div a {
     text-decoration: none;
 }
 
-
-
 .footer__index {
     text-decoration: none;
     list-style: none;
@@ -343,7 +362,7 @@ footer div a {
     color: rgb(207, 207, 200);
 }
 
-  
+
 
 .tarjetagenerica {
     background-color: rgb(230, 116, 90);
@@ -379,22 +398,34 @@ footer div a {
     margin: 10px;
 }
 
-
+.productores__tarjeta {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.6fr 1.7fr 0.7fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "productores__foto productores__name productores__name"
+      "productores__foto productores__info productores__info"
+      "productores__foto productores__button productores__button"; 
+    grid-area: productores__tarjeta; 
+  }
+  .productores__foto { grid-area: productores__foto; }
+  .productores__name { grid-area: productores__name; }
+  .productores__info { grid-area: productores__info; }
+  .productores__button { grid-area: productores__button; }
+  
 .productores {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     align-items: center;
     justify-content: center;
 }
 
 .productores__tarjeta {
     border: 5px solid rgb(96, 103, 103);
-    display: flex;
-    flex-wrap: wrap;
     margin: 40px;
-    color: rgb(207, 207, 200);
+    color: rgb(96, 103, 103);
     padding: 20px;
     border-radius: 20px;
 }
