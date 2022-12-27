@@ -42,13 +42,14 @@
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.001fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "footer__contactos footer__index footer__maps"
         "footer__closer footer__closer footer__closer";
     grid-area: footer;
+
 }
 
 .footer__contactos {
@@ -153,9 +154,6 @@ header h3 {
     display: none;
 }
 
-/**grid productores**/
-
-
 .main {
     color: rgb(96, 103, 103);
 }
@@ -213,21 +211,9 @@ footer div div h4 {
     font-size: 15px;
 }
 
-footer {
-    background-color: rgba(207, 207, 200, 0.7287289915966386);
-    border-radius: 20px;
-}
 
 .footer {
     background-color: rgb(230, 116, 90);
-    border-radius: 20px;
-}
-
-.footer__barra {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 500px auto auto;
-
 }
 
 
@@ -287,19 +273,18 @@ footer div a {
 }
 
 .footer__index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     list-style: none;
     font-size: 30px;
-    padding: 20px;
+    padding: 5px;
     margin: 5px;
-    border-left: 5px solid;
-    padding-top: 25%;
-    padding-left: 15%;
-}
-
-.mapa {
-    width: 90%;
-}
+    border-left: 3px solid;
+    
+    }
 
 .footer__index ul li a:hover {
     color: white;
@@ -319,16 +304,22 @@ footer div a {
 
 .footer__maps {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    border-left: 5px solid;
+    justify-content: center;
+    align-content: center;
+    border-left: 3px solid;
     margin: 5px;
     padding: 15px;
 
-}
 
+}
+.footer__maps iframe{
+    padding-top: 15px;
+}
 .footer__maps img {
-    width: 50px;
+    width: 30px;
+    height: 30px;
     padding: 5px;
     margin: 5px;
 
@@ -336,14 +327,65 @@ footer div a {
 
 .footer__maps__text {
     display: flex;
-    width: 600px;
-    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 30px;
+
+
+
+
 
 
 }
 
 .footer__ssn img {
-    width: 100%
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+@media (max-width:950px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.001fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "footer__contactos footer__index"
+            "footer__maps footer__maps"
+            "footer__closer footer__closer";
+        grid-area: footer;
+    }
+    .footer__maps{
+        border-left: 0px solid;
+        border-top: 3px solid;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.001fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "footer__contactos"
+            "footer__index" 
+            "footer__maps "
+            "footer__closer ";
+        grid-area: footer;
+    }
+
+    .footer__index{
+        border-left: 0px solid;
+        border-top: 3px solid;
+    }
 }
 
 .footer__rights {
@@ -398,42 +440,7 @@ footer div a {
     margin: 10px;
 }
 
-.productores__tarjeta {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0.6fr 1.7fr 0.7fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "productores__foto productores__name productores__name"
-      "productores__foto productores__info productores__info"
-      "productores__foto productores__button productores__button"; 
-    grid-area: productores__tarjeta; 
-  }
-  .productores__foto { grid-area: productores__foto; }
-  .productores__name { grid-area: productores__name; }
-  .productores__info { grid-area: productores__info; }
-  .productores__button { grid-area: productores__button; }
-  
-.productores {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
 
-.productores__tarjeta {
-    border: 5px solid rgb(96, 103, 103);
-    margin: 40px;
-    color: rgb(96, 103, 103);
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.productores__tarjeta img {
-    max-width: 300px;
-    padding: 10px;
-}
 
 .tarjetaInfo {
     height: 800px;
@@ -486,6 +493,101 @@ footer div a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+
+}
+
+.productores__tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.7fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "productores__foto productores__name productores__name"
+        "productores__foto productores__info productores__info"
+        "productores__foto productores__button productores__button";
+    grid-area: productores__tarjeta;
+}
+
+.productores__foto {
+    grid-area: productores__foto;
+}
+
+.productores__name {
+    grid-area: productores__name;
+}
+
+.productores__info {
+    grid-area: productores__info;
+}
+
+.productores__button {
+    grid-area: productores__button;
+}
+
+.productores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.productores__tarjeta {
+    border: 5px solid rgb(96, 103, 103);
+    margin: 40px;
+    color: rgb(96, 103, 103);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.productores__tarjeta img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.productores__name,
+.productores__button {
+    text-align: center;
+}
+
+.productores__button button {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media (max-width:750px) {
+
+    .productores__tarjeta {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.005fr 0.5fr 0.3fr 0.0001fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "productores__name"
+            "productores__foto"
+            "productores__info"
+            "productores__button";
+        grid-area: productores__tarjeta;
+    }
+
+    .productores__foto {
+        grid-area: productores__foto;
+    }
+
+    .productores__name {
+        grid-area: productores__name;
+    }
+
+    .productores__info {
+        grid-area: productores__info;
+    }
+
+    .productores__button {
+        grid-area: productores__button;
+    }
 
 }
 
