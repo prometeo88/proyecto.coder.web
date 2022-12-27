@@ -6,7 +6,51 @@
     list-style: none;
     text-decoration: none;
 }
-
+.body {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.01fr 0.1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "navbarweb navbarweb navbarweb"
+      "main main main"
+      "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .navbarweb { grid-area: navbarweb; }
+  
+  .main {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: main;
+  }
+  
+  .footer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "footer__contactos footer__index footer__maps"
+      "footer__closer footer__closer footer__closer";
+    grid-area: footer;
+  }
+  
+  .footer__contactos { grid-area: footer__contactos; }
+  
+  .footer__index { grid-area: footer__index; }
+  
+  .footer__closer { grid-area: footer__closer; }
+  
+  .footer__maps { grid-area: footer__maps; }
+  
 header {
     color: rgb(207, 207, 200);
     background-color: black;
