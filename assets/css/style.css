@@ -283,8 +283,8 @@ footer div a {
     padding: 5px;
     margin: 5px;
     border-left: 3px solid;
-    
-    }
+
+}
 
 .footer__index ul li a:hover {
     color: white;
@@ -314,9 +314,11 @@ footer div a {
 
 
 }
-.footer__maps iframe{
+
+.footer__maps iframe {
     padding-top: 15px;
 }
+
 .footer__maps img {
     width: 30px;
     height: 30px;
@@ -359,7 +361,8 @@ footer div a {
             "footer__closer footer__closer";
         grid-area: footer;
     }
-    .footer__maps{
+
+    .footer__maps {
         border-left: 0px solid;
         border-top: 3px solid;
     }
@@ -376,13 +379,13 @@ footer div a {
         grid-auto-flow: row;
         grid-template-areas:
             "footer__contactos"
-            "footer__index" 
+            "footer__index"
             "footer__maps "
             "footer__closer ";
         grid-area: footer;
     }
 
-    .footer__index{
+    .footer__index {
         border-left: 0px solid;
         border-top: 3px solid;
     }
@@ -591,20 +594,25 @@ footer div a {
 
 }
 
-.formulario {  display: grid;
+.formulario {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 1.7fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "formulario__title formulario__title"
-      "formulario__form formulario__form";
-  }
-  
-  .formulario__title { grid-area: formulario__title; }
-  
-  .formulario__form { grid-area: formulario__form; }
-  
+        "formulario__title formulario__title"
+        "formulario__form formulario__form";
+}
+
+.formulario__title {
+    grid-area: formulario__title;
+}
+
+.formulario__form {
+    grid-area: formulario__form;
+}
+
 .formulario {
     color: rgb(207, 207, 200);
     background-color: rgb(230, 116, 90);
@@ -626,7 +634,7 @@ footer div a {
 }
 
 .formulario__form input {
-    
+
     width: 100%;
     margin: 15px;
     height: 30px;
