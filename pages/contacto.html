@@ -62,21 +62,29 @@
 
     </nav>
     <main>
-        <div class="formulario">
+        <div class="container formulario">
             <h1 class="formulario__title">Para consultas nos puedes escribir por whatsapp o completar el siguiente
                 formulario y nos contactaremos
                 a la brevedad.</h1>
             <form class="formulario__form" action="" method="post">
-                <ul>
-                    <li><label class="formulario__form_linea" for="name">Nombre y Apellido:</label><input type="text"
-                            id="name"></li>
-                    <li><label for="tel">Celular:</label><input type="tel" id="tel"></li>
-                    <li><label for="asunto">Asunto:</label><input type="text" id="asunto"></li>
-                    <li><label for="mensaje">Mensaje:</label><textarea name="mensaje" id="" cols="30"
-                            rows="10"></textarea></li>
-                    <li><Input type="submit"></INput></li>
-
-                </ul>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese su Nombre y Apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="number" class="form-control" id="celular" placeholder="Ingrese celular sin 0 y sin 15">
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" placeholder="Ingrese el asunto de su consulta">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                </div>
+            </form>
+        </div>
 
 
     </main>
