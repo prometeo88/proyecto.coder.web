@@ -594,6 +594,7 @@ footer div a {
 
 }
 
+/**
 .formulario {
     display: grid;
     grid-template-columns: 1fr;
@@ -612,14 +613,14 @@ footer div a {
 .formulario__form {
     grid-area: formulario__form;
 }
-
+**/
 .formulario {
-    color: rgb(207, 207, 200);
-    background-color: rgb(230, 116, 90);
+    color: rgb(0, 0, 0);
+    background-color: rgb(207, 207, 200);
     border: 5px solid rgb(207, 207, 200);
+    border-radius: 20px;
     padding: 30px;
-    margin: 0px 40px 0px 40px;
-
+    margin: 48px 40px 45px 40px;
 }
 
 .formulario__form {
@@ -633,19 +634,6 @@ footer div a {
 
 }
 
-.formulario__form input {
-
-    width: 100%;
-    margin: 15px;
-    height: 30px;
-}
-
-
-.formulario__form ul li {
-    margin: 20px;
-    width: 100%;
-}
-
 
 .formulario h1 {
     margin-bottom: 50px;
@@ -653,3 +641,8 @@ footer div a {
 
 }
 
+
+.required:after {
+    content: " *";
+    color: red;
+}

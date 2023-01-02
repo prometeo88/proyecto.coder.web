@@ -68,73 +68,78 @@
                 a la brevedad.</h1>
             <form class="formulario__form" action="" method="post">
                 <div class="mb-3">
-                    <label for="name" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="name" placeholder="Ingrese su Nombre y Apellido">
+                    <label for="name" class="form-label required">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese su Nombre y Apellido" required>
                 </div>
                 <div class="mb-3">
-                    <label for="celular" class="form-label">Celular</label>
-                    <input type="number" class="form-control" id="celular" placeholder="Ingrese celular sin 0 y sin 15">
+                    <label for="celular" class="form-label required">Celular</label>
+                    <input type="tel" class="form-control" id="celular" placeholder="Ingrese celular sin 0 y sin 15">
                 </div>
                 <div class="mb-3">
                     <label for="asunto" class="form-label">Asunto</label>
                     <input type="text" class="form-control" id="asunto" placeholder="Ingrese el asunto de su consulta">
                 </div>
                 <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                    <label for="mensaje" class="form-label required">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea>
                 </div>
+                <button type="submit" class="btn btn-light mb-3">ENVIAR</button>
             </form>
         </div>
 
 
     </main>
-    <footer class="footer">
-        <div class="footer__contactos">
-            <div class="footer__whatsapp">
-                <a href="https://api.whatsapp.com/send?phone=543854855795&text=Hola!%20Quisiera%20consultar%20por%20un%20seguro%2C%20me%20puede%20ayudar%3F"
-                    target="_blank">
-                    <H3>Escribinos por Whatsapp!!</H3>
-                </a>
-                <a
-                    href="https://api.whatsapp.com/send?phone=543854855795&text=Hola!%20Quisiera%20consultar%20por%20un%20seguro%2C%20me%20puede%20ayudar%3F"><img
-                        src="../assets/multimedia/whatsapp_black.png" alt="whataspp_ico"></a>
-            </div>
-            <div class="footer__agenda"><img src="../assets/multimedia/qr-add-contact.png" alt="qr-add-contact"
-                    width="200" height="200">
-                <h3>Escanea con el celular y agendanos!</h3>
-            </div>
-        </div>
-        <div class="footer__index">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./seguros.html">SEGUROS</a></li>
-                <li><a href="./productores.html">PRODUCTORES</a></li>
-                <li><a href="./infoutil.html">INFORMACION UTIL</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </div>
-        <div class="footer__maps">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.4903489081105!2d-64.25749795168745!3d-27.813407751575173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b4defcd4c18b7%3A0x18c5a70e9e4d6085!2sEspa%C3%B1a%20721%2C%20G4200%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1669410160731!5m2!1ses-419!2sar"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="footer__maps__text">
-                <img src="../assets/multimedia/location_black.png" alt="location_icon">
-                <h4>España 721 - Los Inmigrantes - Santiago del Estero, Capital</h4>
+
+    <footer>
+        <div class="container-fluid text-center row pt-5 ">
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="500">
+                <form class="container-fluid">
+                    <a href="https://api.whatsapp.com/send?phone=543854855795&text=Hola!%20Quisiera%20consultar%20por%20un%20seguro%2C%20me%20puede%20ayudar%3F"
+                        target="_blank"><button class="btn btn-sm btn-outline-secondary" type="button"><img
+                                style="width: 20px; margin: 5px 5px;" src="../assets/multimedia/whatsapp_black.png"
+                                alt="whataspp_ico"> Envianos tus consultas por Whatsapp </button></a>
+                </form>
+
+                <div class="p-4"><img style="width: 150px;" src="../assets/multimedia/qr-add-contact.png"
+                        alt="qr-add-contact">
+                    <h3>Escanea con el celular y agendanos!</h3>
+                </div>
             </div>
 
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="500">
+                <ul class="nav flex-column nav-pills nav- fill nav-justified p-4">
+                    <li class="nav-item p-1"><a class="nav-link " href="../index.html">INICIO</a></li>
+                    <li class="nav-item p-1"><a class="nav-link " href="./seguros.html">SEGUROS</a></li>
+                    <li class="nav-item p-1"><a class="nav-link " href="./productores.html">PRODUCTORES</a></li>
+                    <li class="nav-item p-1"><a class="nav-link " href="./infoutil.html">INFORMACION UTIL</a></li>
+                    <li class="nav-item p-1"><a class="nav-link active " href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4 pt-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="500">
+                <iframe class="container-fluid m-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.4903489081105!2d-64.25749795168745!3d-27.813407751575173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b4defcd4c18b7%3A0x18c5a70e9e4d6085!2sEspa%C3%B1a%20721%2C%20G4200%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1669410160731!5m2!1ses-419!2sar"
+                    width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img src="../assets/multimedia/location_black.png" style="width: 20px;" alt="location_icon">
+                <h4 class="text-muted  p-3">España 721 - Los Inmigrantes - Santiago del Estero, Capital
+                </h4>
+            </div>
         </div>
-        <div class="footer__closer">
-            <div class="footer__ssn">
-                <a href="https://www.argentina.gob.ar/superintendencia-de-seguros"> <img
-                        src="../assets/multimedia/banner-ssn.png" alt="baner_ssn"></a>
-            </div>
-            <div class="footer__rights">
-                <h6>Todos los derechos reservados 2022</h6>
-            </div>
+        <div class="container-fluid row m-0 text-center">
+            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros"> <img class="img-fluid"
+                    src="../assets/multimedia/banner-ssn.png" alt="baner_ssn"></a>
+        </div>
+        </div>
+        <div class="container-fluid text-center">
+            <h6>Todos los derechos reservados 2022</h6>
         </div>
 
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
