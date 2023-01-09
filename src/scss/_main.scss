@@ -1,0 +1,62 @@
+
+main {
+    color:$color-primario;
+}
+
+.main_productores h1,
+.main_productores p {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.main_index div>img {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.carousel-caption {
+    color: transparent;
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(25, 23, 23, 1) 0%, rgba(54, 36, 32, 0.8239670868347339) 7%, rgba(230, 116, 90, 0.7875525210084033) 35%, rgba(207, 207, 200, 0.7287289915966386) 100%);
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+}
+
+
+/** ANIMACIONES MAIN**/
+.focus-in-expand {
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both ;
+}
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+

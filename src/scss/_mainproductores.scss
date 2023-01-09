@@ -1,0 +1,95 @@
+
+.productores__tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.7fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "productores__foto productores__name productores__name"
+        "productores__foto productores__info productores__info"
+        "productores__foto productores__button productores__button";
+    grid-area: productores__tarjeta;
+}
+
+.productores__foto {
+    grid-area: productores__foto;
+}
+
+.productores__name {
+    grid-area: productores__name;
+}
+
+.productores__info {
+    grid-area: productores__info;
+}
+
+.productores__button {
+    grid-area: productores__button;
+}
+
+.productores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.productores__tarjeta {
+    border: 5px solid rgb(96, 103, 103);
+    margin: 40px;
+    color: rgb(96, 103, 103);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.productores__tarjeta img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.productores__name,
+.productores__button {
+    text-align: center;
+}
+
+.productores__button button {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media (max-width:750px) {
+
+    .productores__tarjeta {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.005fr 0.5fr 0.3fr 0.0001fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "productores__name"
+            "productores__foto"
+            "productores__info"
+            "productores__button";
+        grid-area: productores__tarjeta;
+    }
+
+    .productores__foto {
+        grid-area: productores__foto;
+    }
+
+    .productores__name {
+        grid-area: productores__name;
+    }
+
+    .productores__info {
+        grid-area: productores__info;
+    }
+
+    .productores__button {
+        grid-area: productores__button;
+    }
+
+}

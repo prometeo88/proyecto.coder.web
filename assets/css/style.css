@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.01fr auto 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ".";
+  grid-area: main;
+}
+
+header img {
+  width: 18px;
+  margin: 3px;
+  align-self: center;
+}
+
+.header {
+  color: rgb(207, 207, 200);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 35px;
+}
+.header h3 {
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+  color: rgb(207, 207, 200);
+}
+
+main {
+  color: rgb(96, 103, 103);
+}
+
+.main_productores h1,
+.main_productores p {
+  padding: 15px;
+  text-align: center;
+}
+
+.main_index div > img {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.carousel-caption {
+  color: transparent;
+  font-size: 20px;
+  background: linear-gradient(90deg, rgb(25, 23, 23) 0%, rgba(54, 36, 32, 0.8239670868) 7%, rgba(230, 116, 90, 0.787552521) 35%, rgba(207, 207, 200, 0.7287289916) 100%);
+  background-clip: content-box;
+  -webkit-background-clip: content-box;
+}
+
+/** ANIMACIONES MAIN**/
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+footer div div h3 {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+footer div h4 {
+  font-size: 15px;
+}
+
+.tarjetaInfo {
+  color: rgb(207, 207, 200);
+  margin: 0px 50px 0px 50px;
+  padding: 20px 50px 20px 50px;
+  border: 5px solid rgb(207, 207, 200);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tarjetaInfo h2 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 35px;
+}
+
+.tarjetaInfo ul li {
+  list-style: square;
+  padding: 20px;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.tarjetaInfo h3 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 35px;
+}
+
+.tarjetaInfo__numeros {
+  border: 1px solid rgb(207, 207, 200);
+  border-radius: 5px;
+  background-color: rgb(230, 116, 90);
+  margin: 10px;
+  max-width: 150px;
+  height: 180px;
+}
+
+.tarjetaInfo__logo {
+  width: 100%;
+  height: auto;
+  padding: 20%;
+}
+
+.tarjetasInfo__todas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.productores__tarjeta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1.7fr 0.7fr;
+  gap: 0px 0px;
+  grid-template-areas: "productores__foto productores__name productores__name" "productores__foto productores__info productores__info" "productores__foto productores__button productores__button";
+  grid-area: productores__tarjeta;
+}
+
+.productores__foto {
+  grid-area: productores__foto;
+}
+
+.productores__name {
+  grid-area: productores__name;
+}
+
+.productores__info {
+  grid-area: productores__info;
+}
+
+.productores__button {
+  grid-area: productores__button;
+}
+
+.productores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.productores__tarjeta {
+  border: 5px solid rgb(96, 103, 103);
+  margin: 40px;
+  color: rgb(96, 103, 103);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.productores__tarjeta img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.productores__name,
+.productores__button {
+  text-align: center;
+}
+
+.productores__button button {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media (max-width: 750px) {
+  .productores__tarjeta {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.005fr 0.5fr 0.3fr 0.0001fr;
+    gap: 0px 0px;
+    grid-template-areas: "productores__name" "productores__foto" "productores__info" "productores__button";
+    grid-area: productores__tarjeta;
+  }
+  .productores__foto {
+    grid-area: productores__foto;
+  }
+  .productores__name {
+    grid-area: productores__name;
+  }
+  .productores__info {
+    grid-area: productores__info;
+  }
+  .productores__button {
+    grid-area: productores__button;
+  }
+}
+.formulario {
+  color: rgb(0, 0, 0);
+  background-color: rgb(207, 207, 200);
+  border: 5px solid rgb(207, 207, 200);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 48px 40px 45px 40px;
+}
+
+.formulario__form {
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.formulario h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}/*# sourceMappingURL=style.css.map */
