@@ -58,6 +58,11 @@ header img {
   color: rgb(207, 207, 200);
 }
 
+.navbar {
+  background-color: rgb(248, 249, 250);
+  color: black;
+}
+
 main {
   color: rgb(96, 103, 103);
 }
