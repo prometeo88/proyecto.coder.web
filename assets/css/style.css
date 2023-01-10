@@ -60,7 +60,7 @@ header img {
 
 .navbar {
   background-color: rgb(248, 249, 250);
-  color: black;
+  color: rgb(96, 103, 103);
 }
 
 main {
@@ -259,16 +259,16 @@ footer div h4 {
 }
 .formulario {
   color: rgb(0, 0, 0);
-  background-color: rgb(207, 207, 200);
+  background-color: rgb(230, 116, 90);
   border: 5px solid rgb(207, 207, 200);
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 30px;
   margin: 48px 40px 45px 40px;
 }
 
 .formulario__form {
   border: 5px solid rgb(0, 0, 0);
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 20px;
   width: 100%;
   color: rgb(0, 0, 0);
