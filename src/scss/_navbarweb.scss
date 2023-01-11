@@ -1,4 +1,23 @@
 .navbar {
-    background-color: rgb(248, 249, 250);
-    color:$color-primario;
+    background-color: #f8f9fa;
+    color: $color-primario;
+
+    img {
+        width: 30px;
+        margin: 0px 5px;
+    }
+}
+
+//EDITABLE NAVBAR BOOTSTRAP//
+
+.navbar a {
+    color: $color-primario;
+}
+
+.nav-item a {
+    color: $color-primario;
+}
+
+.active-link  {
+    text-shadow: -2px 4px 3px rgba(96,103,103,1);
 }

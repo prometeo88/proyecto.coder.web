@@ -59,12 +59,28 @@ header img {
 }
 
 .navbar {
-  background-color: rgb(248, 249, 250);
-  color: rgb(96, 103, 103);
+  background-color: #f8f9fa;
+  color: #606767;
+}
+.navbar img {
+  width: 30px;
+  margin: 0px 5px;
+}
+
+.navbar a {
+  color: #606767;
+}
+
+.nav-item a {
+  color: #606767;
+}
+
+.active-link {
+  text-shadow: -2px 4px 3px rgb(96, 103, 103);
 }
 
 main {
-  color: rgb(96, 103, 103);
+  color: #606767;
 }
 
 .main_productores h1,
