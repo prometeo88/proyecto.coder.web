@@ -4,11 +4,15 @@ footer div {
         color: rgb(0, 0, 0);
         margin: 10px;
     }
+
     h4 {
         font-size: 15px;
     }
-
 }
 
 
-
+.test-pills a.test-pills.active,
+.test-pills .show>.nav-link {
+    color: red;
+    background-color: $color-contraste;
+}
