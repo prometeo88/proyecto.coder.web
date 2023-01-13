@@ -1,7 +1,7 @@
 footer div {
     div h3 {
         font-size: 20px;
-        color: rgb(0, 0, 0);
+        color: $color-primario;
         margin: 10px;
     }
 
@@ -10,9 +10,15 @@ footer div {
     }
 }
 
+//TEST PILLS DEL NAV FOOTER//
 
-.test-pills a.test-pills.active,
-.test-pills .show>.nav-link {
-    color: red;
-    background-color: $color-contraste;
+.c-bg-pills {
+    background-color: $color-contraste !important;
+    border-radius: 8px;
+    color: $color-primario !important;
+
+}
+
+.c-pills  {
+    color: $color-primario !important;
 }

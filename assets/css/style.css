@@ -76,7 +76,7 @@ header img {
 }
 
 .active-link {
-  text-shadow: -2px 4px 3px rgb(96, 103, 103);
+  text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.52);
 }
 
 .wobble-hor-bottom:hover {
@@ -285,17 +285,21 @@ main {
 }
 footer div div h3 {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: #606767;
   margin: 10px;
 }
 footer div h4 {
   font-size: 15px;
 }
 
-.test-pills a.test-pills.active,
-.test-pills .show > .nav-link {
-  color: red;
-  background-color: rgb(230, 116, 90);
+.c-bg-pills {
+  background-color: rgb(230, 116, 90) !important;
+  border-radius: 8px;
+  color: #606767 !important;
+}
+
+.c-pills {
+  color: #606767 !important;
 }
 
 .tarjetaInfo {
