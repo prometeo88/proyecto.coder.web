@@ -1,14 +1,6 @@
-
 main {
-    color:$color-primario;
+    color: $color-primario;
 }
-
-.main_productores h1,
-.main_productores p {
-    padding: 15px;
-    text-align: center;
-}
-
 
 .main_index div>img {
     max-width: 1250px;
@@ -26,8 +18,8 @@ main {
 
 /** ANIMACIONES MAIN**/
 .focus-in-expand {
-    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
-    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both ;
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes focus-in-expand {
@@ -59,4 +51,3 @@ main {
         opacity: 1;
     }
 }
-

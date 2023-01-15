@@ -236,12 +236,6 @@ main {
   color: #606767;
 }
 
-.main_productores h1,
-.main_productores p {
-  padding: 15px;
-  text-align: center;
-}
-
 .main_index div > img {
   max-width: 1250px;
   margin: auto;
@@ -356,7 +350,7 @@ footer div h4 {
 
 .productores__tarjeta {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 0.6fr 1.7fr 0.7fr;
   gap: 0px 0px;
   grid-template-areas: "productores__foto productores__name productores__name" "productores__foto productores__info productores__info" "productores__foto productores__button productores__button";
@@ -387,12 +381,24 @@ footer div h4 {
   justify-content: center;
 }
 
+.main_productores h1,
+.main_productores p {
+  padding: 15px;
+  text-align: center;
+  align-self: center;
+}
+
+.main_productores p:nth-child(2) {
+  padding: 0px 40px;
+}
+
 .productores__tarjeta {
   border: 5px solid rgb(96, 103, 103);
   margin: 40px;
   color: rgb(96, 103, 103);
   padding: 20px;
   border-radius: 20px;
+  max-width: 1250px;
 }
 
 .productores__tarjeta img {
