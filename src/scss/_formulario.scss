@@ -1,14 +1,14 @@
 .formulario {
     color: rgb(0, 0, 0);
-    background-color: rgb(230, 116, 90);
-    border: 5px solid rgb(207, 207, 200);
+    background-color: $color-contraste;
+    border: 5px solid $color-primario;
     border-radius: 5px;
     padding: 30px;
-    margin: 48px 40px 45px 40px;
+    margin: 48px auto 45px auto;
 }
 
 .formulario__form {
-    border: 5px solid rgb(0, 0, 0);
+    border: 7px solid rgb(0, 0, 0);
     border-radius: 5px;
     padding: 20px;
     width: 100%;
