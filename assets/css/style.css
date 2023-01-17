@@ -237,18 +237,37 @@ main {
 }
 
 .main_index div > img {
-  max-width: 1250px;
+  max-width: 1100px;
   margin: auto;
 }
 
 .carousel-caption {
-  color: transparent;
+  color: white;
   font-size: 20px;
-  background: linear-gradient(90deg, rgb(25, 23, 23) 0%, rgba(54, 36, 32, 0.8239670868) 7%, rgba(230, 116, 90, 0.787552521) 35%, rgba(207, 207, 200, 0.7287289916) 100%);
   background-clip: content-box;
   -webkit-background-clip: content-box;
 }
 
+.carousel {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  align-items: end;
+  max-height: 70%;
+}
+
+@media (max-width: 750px) {
+  .carousel-control-prev, .carousel-control-next {
+    align-items: end;
+    max-height: 80%;
+  }
+  .carousel-caption h5, .carousel-caption p {
+    font-size: 12px;
+    color: white;
+  }
+}
 /** ANIMACIONES MAIN**/
 .focus-in-expand {
   -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -284,6 +303,19 @@ footer div div h3 {
 }
 footer div h4 {
   font-size: 15px;
+}
+
+.footer__whatsappicon {
+  width: 20px;
+  margin: 5px 5px;
+}
+
+.footer__whatsapqr {
+  width: 150px;
+}
+
+.footer__locationico {
+  width: 20px;
 }
 
 .c-bg-pills {

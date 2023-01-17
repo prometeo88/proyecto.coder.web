@@ -3,18 +3,47 @@ main {
 }
 
 .main_index div>img {
-    max-width: 1250px;
+    max-width: 1100px;
     margin: auto;
 }
 
 .carousel-caption {
-    color: transparent;
+    color: white;
     font-size: 20px;
-    background: linear-gradient(90deg, rgba(25, 23, 23, 1) 0%, rgba(54, 36, 32, 0.8239670868347339) 7%, rgba(230, 116, 90, 0.7875525210084033) 35%, rgba(207, 207, 200, 0.7287289915966386) 100%);
+    //background: linear-gradient(90deg, rgba(25, 23, 23, 1) 0%, rgba(54, 36, 32, 0.8239670868347339) 7%, rgba(230, 116, 90, 0.7875525210084033) 35%, rgba(207, 207, 200, 0.7287289915966386) 100%);
     background-clip: content-box;
     -webkit-background-clip: content-box;
 }
 
+.carousel {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.carousel-control-prev {
+    align-items: end;
+    max-height: 70%;
+}
+
+.carousel-control-next {
+    @extend .carousel-control-prev;
+}
+
+@media (max-width: 750px) {
+    .carousel-control-prev {
+        align-items: end;
+        max-height: 80%;
+    }
+    
+    .carousel-control-next {
+        @extend .carousel-control-prev;
+    }
+    .carousel-caption h5,.carousel-caption p{
+        font-size: 12px;
+        color: white;
+    }
+    
+}
 
 /** ANIMACIONES MAIN**/
 .focus-in-expand {

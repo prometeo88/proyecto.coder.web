@@ -10,6 +10,20 @@ footer div {
     }
 }
 
+.footer__whatsappicon {
+    width: 20px;
+    margin: 5px 5px;
+}
+
+.footer__whatsapqr {
+    width: 150px;
+}
+
+.footer__locationico {
+    width: 20px;
+}
+
+
 //TEST PILLS DEL NAV FOOTER//
 
 .c-bg-pills {
@@ -19,6 +33,6 @@ footer div {
 
 }
 
-.c-pills  {
+.c-pills {
     color: $color-primario !important;
 }
