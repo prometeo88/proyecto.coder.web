@@ -298,8 +298,8 @@ main {
   }
 }
 .puff:hover {
-  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  -webkit-animation: puff 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
 @-webkit-keyframes puff {
