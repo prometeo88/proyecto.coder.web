@@ -1,3 +1,13 @@
 $color-primario: #606767;
-$color-secundario:#cfcfc8;
-$color-contraste:rgb(230, 116, 90);
+$color-secundario: #cfcfc8;
+$color-contraste: rgb(230, 116, 90);
+
+@mixin formato-tarjetas {
+    background-color: $color-contraste;
+    border: 5px solid $color-secundario;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 150px;
+    max-height: 165px;
+}

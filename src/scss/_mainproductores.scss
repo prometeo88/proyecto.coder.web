@@ -41,14 +41,15 @@
     align-self: center;
 }
 
+
 .main_productores p:nth-child(2) {
     padding: 0px 40px;
 }
 
 .productores__tarjeta {
-    border: 5px solid rgb(96, 103, 103);
+    border: 5px solid $color-primario;
     margin: 40px;
-    color: rgb(96, 103, 103);
+    color: $color-primario;
     padding: 20px;
     border-radius: 20px;
     max-width: 1250px;
@@ -61,9 +62,13 @@
     padding: 10px;
 }
 
-.productores__name,
-.productores__button {
+.productores__name{
     text-align: center;
+    width: auto;
+    }
+
+.productores__button {
+    @extend .productores__name;
 }
 
 .productores__button button {

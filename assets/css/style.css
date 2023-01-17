@@ -323,12 +323,17 @@ footer div h4 {
 }
 
 .tarjetaInfo__numeros {
-  border: 1px solid #cfcfc8;
-  border-radius: 5px;
   background-color: rgb(230, 116, 90);
+  border: 5px solid #cfcfc8;
+  border-radius: 5px;
+  padding: 10px;
   margin: 10px;
   max-width: 150px;
-  height: 180px;
+  max-height: 165px;
+}
+.tarjetaInfo__numeros a {
+  text-decoration: none;
+  color: #606767;
 }
 
 .tarjetaInfo__logo {
@@ -358,7 +363,7 @@ footer div h4 {
   grid-area: productores__foto;
 }
 
-.productores__name {
+.productores__name, .productores__button {
   grid-area: productores__name;
 }
 
@@ -390,9 +395,9 @@ footer div h4 {
 }
 
 .productores__tarjeta {
-  border: 5px solid rgb(96, 103, 103);
+  border: 5px solid #606767;
   margin: 40px;
-  color: rgb(96, 103, 103);
+  color: #606767;
   padding: 20px;
   border-radius: 20px;
   max-width: 1250px;
@@ -406,9 +411,9 @@ footer div h4 {
   padding: 10px;
 }
 
-.productores__name,
-.productores__button {
+.productores__name, .productores__button {
   text-align: center;
+  width: auto;
 }
 
 .productores__button button {
@@ -429,7 +434,7 @@ footer div h4 {
   .productores__foto {
     grid-area: productores__foto;
   }
-  .productores__name {
+  .productores__name, .productores__button {
     grid-area: productores__name;
   }
   .productores__info {
@@ -447,6 +452,10 @@ footer div h4 {
   padding: 30px;
   margin: 48px auto 45px auto;
 }
+.formulario h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
 
 .formulario__form {
   border: 7px solid rgb(0, 0, 0);
@@ -455,11 +464,6 @@ footer div h4 {
   width: 100%;
   color: rgb(0, 0, 0);
   font-size: 18px;
-}
-
-.formulario h1 {
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .required:after {

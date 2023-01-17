@@ -5,6 +5,11 @@
     border-radius: 5px;
     padding: 30px;
     margin: 48px auto 45px auto;
+    h1 {
+        margin-bottom: 50px;
+        text-align: center;
+    
+    }
 }
 
 .formulario__form {
@@ -16,12 +21,6 @@
     font-size: 18px;
 }
 
-
-.formulario h1 {
-    margin-bottom: 50px;
-    text-align: center;
-
-}
 
 .required:after {
     content: " *";
