@@ -263,7 +263,8 @@ main {
     align-items: end;
     max-height: 80%;
   }
-  .carousel-caption h5, .carousel-caption p {
+  .carousel-caption h5,
+.carousel-caption p {
     font-size: 12px;
     color: white;
   }
@@ -292,6 +293,35 @@ main {
     opacity: 0;
   }
   100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.puff:hover {
+  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes puff {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
     filter: blur(0px);
     opacity: 1;
   }
