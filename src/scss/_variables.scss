@@ -1,6 +1,7 @@
-$color-primario: #606767;
-$color-secundario: #cfcfc8;
+$color-primario: rgb(96, 103, 103);
+$color-secundario: rgb(207, 207, 200);
 $color-contraste: rgb(230, 116, 90);
+$color-tarjetas: rgb(69, 90, 90);
 
 @mixin formato-tarjetas {
     background-color: $color-contraste;
