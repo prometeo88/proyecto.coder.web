@@ -1,9 +1,10 @@
 .titulo-seguros{
     font-weight: 750;
     padding-top: 30px !important;
-    background-image: conic-gradient($color-tarjetas, $color-secundario,$color-primario);
+    background-image: linear-gradient(to top,$color-tarjetas, $color-secundario);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     text-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    font-size: 40px;
 }

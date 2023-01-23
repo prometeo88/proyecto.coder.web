@@ -61,11 +61,12 @@ header img {
 .titulo-seguros {
   font-weight: 750;
   padding-top: 30px !important;
-  background-image: conic-gradient(rgb(69, 90, 90), rgb(207, 207, 200), rgb(96, 103, 103));
+  background-image: linear-gradient(to top, rgb(69, 90, 90), rgb(207, 207, 200));
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 40px;
 }
 
 .card3d {
@@ -129,7 +130,7 @@ header img {
   border-radius: 6px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: linear-gradient(45deg, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
+  background: linear-gradient(to top, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
 }
 .front .inner {
   grid-template-rows: 1fr 1fr 2fr 1fr;
