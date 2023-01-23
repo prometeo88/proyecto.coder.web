@@ -107,7 +107,6 @@ header img {
   background-color: #fff;
   background-size: cover;
   background-position: center center;
-  background-image: url(../multimedia/personas/auto-icon.png);
 }
 .front:after {
   content: "";
@@ -120,7 +119,7 @@ header img {
   border-radius: 6px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: linear-gradient(60deg, rgba(96, 103, 103, 0.2), rgba(221, 139, 17, 0.2));
+  background: linear-gradient(65deg, rgba(182, 182, 182, 0.39) 0%, rgba(96, 103, 103, 0.2) 90%);
 }
 .front .inner {
   grid-template-rows: 1fr 1fr 2fr 1fr;
@@ -130,7 +129,7 @@ header img {
   grid-row: 2;
   margin-bottom: 0.3em;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   color: #fff;
   font-weight: 600;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
