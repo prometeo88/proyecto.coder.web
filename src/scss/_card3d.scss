@@ -62,7 +62,7 @@
         display: block;
         border-radius: 6px;
         backface-visibility: hidden;
-        background: linear-gradient(65deg, rgba(182, 182, 182, 0.39) 0%, rgba(96, 103, 103, 0.2) 90%);
+        background: linear-gradient(45deg, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
 
     }
 
@@ -70,8 +70,9 @@
 
     .inner {
         grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-template-columns: 1fr fit-content(100%);
         justify-items: center;
-    }
+            }
 
     h2 {
 

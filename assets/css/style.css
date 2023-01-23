@@ -58,6 +58,16 @@ header img {
   color: rgb(207, 207, 200);
 }
 
+.titulo-seguros {
+  font-weight: 750;
+  padding-top: 30px !important;
+  background-image: conic-gradient(rgb(69, 90, 90), rgb(207, 207, 200), rgb(96, 103, 103));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .card3d {
   width: 320px;
   height: 255px;
@@ -119,10 +129,11 @@ header img {
   border-radius: 6px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: linear-gradient(65deg, rgba(182, 182, 182, 0.39) 0%, rgba(96, 103, 103, 0.2) 90%);
+  background: linear-gradient(45deg, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
 }
 .front .inner {
   grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr fit-content(100%);
   justify-items: center;
 }
 .front h2 {
