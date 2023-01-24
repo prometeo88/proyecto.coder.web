@@ -4,11 +4,12 @@ $color-contraste: rgb(230, 116, 90);
 $color-tarjetas: rgb(69, 90, 90);
 
 @mixin formato-tarjetas {
-    background-color: $color-contraste;
+    background: linear-gradient(to top, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
     border: 5px solid $color-secundario;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 10px;
     margin: 10px;
     max-width: 150px;
-    max-height: 165px;
+    max-height: 200px;
+    perspective: 1500px;
 }
