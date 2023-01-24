@@ -27,6 +27,25 @@
     }
 }
 
+@media (max-width:750px){.tarjetaInfo{
+    padding: 10Px;
+    ul{
+        padding: 0px;
+        li{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: justify;
+            padding: 15px 5px 15px 5px;
+        }        
+    }
+    h2{
+        padding: 0px 0px 20px 0px 
+    }
+}
+
+    
+}
+
 
 .tarjetaInfo__numeros {
     @include formato-tarjetas;

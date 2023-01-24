@@ -580,6 +580,23 @@ footer div h4 {
   padding-bottom: 35px;
 }
 
+@media (max-width: 750px) {
+  .tarjetaInfo {
+    padding: 10Px;
+  }
+  .tarjetaInfo ul {
+    padding: 0px;
+  }
+  .tarjetaInfo ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: justify;
+    padding: 15px 5px 15px 5px;
+  }
+  .tarjetaInfo h2 {
+    padding: 0px 0px 20px 0px;
+  }
+}
 .tarjetaInfo__numeros {
   background: linear-gradient(to top, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
   border: 5px solid rgb(207, 207, 200);
