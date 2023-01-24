@@ -1,7 +1,7 @@
-$color-primario: rgb(96, 103, 103);
-$color-secundario: rgb(207, 207, 200);
-$color-contraste: rgb(230, 116, 90);
-$color-tarjetas: rgb(69, 90, 90);
+$color-primario: #606767;
+$color-secundario: #cfcfc8;
+$color-contraste: #e6745a;
+$color-tarjetas: #455a5a;
 
 @mixin formato-tarjetas {
     background: linear-gradient(to top, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
@@ -13,3 +13,4 @@ $color-tarjetas: rgb(69, 90, 90);
     max-height: 200px;
     perspective: 1500px;
 }
+

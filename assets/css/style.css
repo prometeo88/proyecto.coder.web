@@ -61,7 +61,7 @@ header img {
 .titulo-seguros {
   font-weight: 750;
   padding-top: 30px !important;
-  background-image: linear-gradient(to top, rgb(69, 90, 90), rgb(207, 207, 200));
+  background-image: linear-gradient(to top, #455a5a, #cfcfc8);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -104,7 +104,7 @@ header img {
           backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: 6px;
-  border: 2px solid rgb(207, 207, 200);
+  border: 2px solid #cfcfc8;
 }
 .front .inner,
 .back .inner {
@@ -130,7 +130,7 @@ header img {
   border-radius: 6px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: linear-gradient(to top, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
+  background: linear-gradient(180deg, rgba(207, 207, 200, 0) 0%, rgba(230, 116, 90, 0.75) 0%);
 }
 .front .inner {
   grid-template-rows: 1fr 1fr 2fr 1fr;
@@ -166,7 +166,7 @@ header img {
   position: relative;
   display: flex;
   align-items: center;
-  color: rgb(69, 90, 90);
+  color: #455a5a;
   grid-row: 2;
   text-align: justify;
   line-height: 20px;
@@ -189,7 +189,7 @@ header img {
   font-weight: 500 !important;
   line-height: 1.4em !important;
   overflow: auto;
-  color: rgb(69, 90, 90);
+  color: #455a5a;
   padding-right: 10px;
 }
 
@@ -224,16 +224,16 @@ header img {
   background-color: #fff;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   text-shadow: none;
-  color: rgb(69, 90, 90);
+  color: #455a5a;
 }
 .button.return {
   line-height: 3em;
-  color: rgb(69, 90, 90);
-  border-color: rgb(69, 90, 90);
+  color: #455a5a;
+  border-color: #455a5a;
   text-shadow: none;
 }
 .button.return:hover {
-  background-color: rgb(69, 90, 90);
+  background-color: #455a5a;
   color: #fff;
   box-shadow: none;
 }
@@ -251,12 +251,12 @@ header img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(69, 90, 90);
+  background: #455a5a;
 }
 
 .navbar {
   background-color: #f8f9fa;
-  color: rgb(96, 103, 103);
+  color: #606767;
 }
 .navbar img {
   width: 30px;
@@ -264,11 +264,11 @@ header img {
 }
 
 .navbar a {
-  color: rgb(96, 103, 103);
+  color: #606767;
 }
 
 .nav-item a {
-  color: rgb(96, 103, 103);
+  color: #606767;
 }
 
 .active-link {
@@ -429,7 +429,7 @@ header img {
   }
 }
 main {
-  color: rgb(96, 103, 103);
+  color: #606767;
 }
 
 .main_index div > img {
@@ -524,7 +524,7 @@ main {
 }
 footer div div h3 {
   font-size: 20px;
-  color: rgb(96, 103, 103);
+  color: #606767;
   margin: 10px;
 }
 footer div h4 {
@@ -545,20 +545,20 @@ footer div h4 {
 }
 
 .c-bg-pills {
-  background-color: rgb(230, 116, 90) !important;
+  background-color: #e6745a !important;
   border-radius: 8px;
-  color: rgb(96, 103, 103) !important;
+  color: #606767 !important;
 }
 
 .c-pills {
-  color: rgb(96, 103, 103) !important;
+  color: #606767 !important;
 }
 
 .tarjetaInfo {
-  color: rgb(96, 103, 103);
+  color: #606767;
   margin: auto;
   padding: 20px 50px 20px 50px;
-  border: 5px solid rgb(207, 207, 200);
+  border: 5px solid #cfcfc8;
   border-radius: 20px;
   text-align: center;
   margin-bottom: 30px;
@@ -599,7 +599,7 @@ footer div h4 {
 }
 .tarjetaInfo__numeros {
   background: linear-gradient(to top, rgba(182, 182, 182, 0.8) 20%, rgba(96, 103, 103, 0.4) 60%);
-  border: 5px solid rgb(207, 207, 200);
+  border: 5px solid #cfcfc8;
   border-radius: 6px;
   padding: 10px;
   margin: 10px;
@@ -662,7 +662,7 @@ footer div h4 {
           backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: 6px;
-  border: 2px solid rgb(207, 207, 200);
+  border: 2px solid #cfcfc8;
 }
 .front-info .inner-info,
 .back-info .inner-info {
@@ -727,7 +727,7 @@ footer div h4 {
   position: relative;
   display: flex;
   align-items: center;
-  color: rgb(69, 90, 90);
+  color: #455a5a;
   grid-row: 2;
   text-align: center;
   line-height: 18px;
@@ -751,7 +751,7 @@ footer div h4 {
   border-radius: 5px;
   font-weight: 500 !important;
   overflow: auto;
-  color: rgb(69, 90, 90);
+  color: #455a5a;
   padding-right: 10px;
 }
 
@@ -785,16 +785,16 @@ footer div h4 {
   background-color: #fff;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   text-shadow: none;
-  color: rgb(69, 90, 90);
+  color: #455a5a;
 }
 .button-info.return-info {
   line-height: 3em;
-  color: rgb(69, 90, 90);
-  border-color: rgb(69, 90, 90);
+  color: #455a5a;
+  border-color: #455a5a;
   text-shadow: none;
 }
 .button-info.return-info:hover {
-  background-color: rgb(69, 90, 90);
+  background-color: #455a5a;
   color: #fff;
   box-shadow: none;
 }
@@ -812,7 +812,7 @@ footer div h4 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(69, 90, 90);
+  background: #455a5a;
 }
 
 .productores__tarjeta {
@@ -860,9 +860,9 @@ footer div h4 {
 }
 
 .productores__tarjeta {
-  border: 5px solid rgb(96, 103, 103);
+  border: 5px solid #606767;
   margin: 40px;
-  color: rgb(96, 103, 103);
+  color: #606767;
   padding: 20px;
   border-radius: 20px;
   max-width: 1250px;
@@ -911,8 +911,8 @@ footer div h4 {
 }
 .formulario {
   color: rgb(0, 0, 0);
-  background-color: rgb(230, 116, 90);
-  border: 5px solid rgb(96, 103, 103);
+  background-color: #e6745a;
+  border: 5px solid #606767;
   border-radius: 5px;
   padding: 30px;
   margin: 48px auto 45px auto;
