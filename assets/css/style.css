@@ -58,7 +58,7 @@ header img {
   color: rgb(207, 207, 200);
 }
 
-.titulo-seguros {
+.titulo-seguros, .formulario__title {
   font-weight: 750;
   padding-top: 30px !important;
   background-image: linear-gradient(to top, #455a5a, #cfcfc8);
@@ -503,7 +503,7 @@ main {
 
 .image-main {
   border: 5px solid #606767 !important;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px !important;
 }
 
@@ -622,8 +622,8 @@ footer div h4 {
   color: #606767;
   margin: auto;
   padding: 20px 50px 20px 50px;
-  border: 5px solid #cfcfc8;
-  border-radius: 20px;
+  border: 5px solid #606767;
+  border-radius: 15px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -975,23 +975,32 @@ footer div h4 {
 }
 .formulario {
   color: rgb(0, 0, 0);
-  background-color: #e6745a;
+  background: linear-gradient(to top, rgb(182, 182, 182) 20%, rgba(96, 103, 103, 0.3) 70%);
   border: 5px solid #606767;
   border-radius: 5px;
-  padding: 30px;
+  padding: 20px;
   margin: 48px auto 45px auto;
 }
 .formulario h1 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
+@media (max-width: 750px) {
+  .formulario {
+    padding: 10px;
+    margin: auto;
+  }
+  .formulario_title {
+    margin-bottom: 0px;
+  }
+}
 .formulario__form {
-  border: 7px solid rgb(0, 0, 0);
+  border: 7px solid #455a5a;
   border-radius: 5px;
   padding: 20px;
   width: 100%;
-  color: rgb(0, 0, 0);
+  color: #606767;
   font-size: 18px;
 }
 

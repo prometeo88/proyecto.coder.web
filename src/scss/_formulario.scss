@@ -1,23 +1,38 @@
 .formulario {
     color: rgb(0, 0, 0);
-    background-color: $color-contraste;
+    background: linear-gradient(to top, rgba(182, 182, 182, 1) 20%, rgba(96, 103, 103, 0.3) 70%);
     border: 5px solid $color-primario;
     border-radius: 5px;
-    padding: 30px;
+    padding: 20px;
     margin: 48px auto 45px auto;
     h1 {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         text-align: center;
     
     }
 }
 
+@media (max-width: 750px) {
+    .formulario{
+        padding: 10px;
+        margin: auto ;
+    }
+    .formulario_title{
+        margin-bottom: 0px;
+    }
+    
+}
+
+.formulario__title{
+    @extend .titulo-seguros
+}
+
 .formulario__form {
-    border: 7px solid rgb(0, 0, 0);
+    border: 7px solid $color-tarjetas;
     border-radius: 5px;
     padding: 20px;
     width: 100%;
-    color: rgb(0, 0, 0);
+    color: $color-primario;
     font-size: 18px;
 }
 
