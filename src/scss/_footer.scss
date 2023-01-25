@@ -1,26 +1,31 @@
-footer div {
-    div h3 {
-        font-size: 20px;
-        color: $color-primario;
-        margin: 10px;
+footer {
+    div {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+
+        div h3 {
+            font-size: 20px;
+            color: $color-primario;
+            margin: 10px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
     }
 
-    h4 {
-        font-size: 15px;
+    .footer__whatsappicon {
+        width: 20px;
+        margin: 5px 5px;
     }
-}
 
-.footer__whatsappicon {
-    width: 20px;
-    margin: 5px 5px;
-}
+    .footer__whatsapqr {
+        width: 150px;
+    }
 
-.footer__whatsapqr {
-    width: 150px;
-}
-
-.footer__locationico {
-    width: 20px;
+    .footer__locationico {
+        width: 20px;
+    }
 }
 
 
