@@ -480,15 +480,6 @@ header img {
     animation-timing-function: ease-out;
   }
 }
-main {
-  color: #606767;
-}
-
-.main_index div > img {
-  max-width: 1100px;
-  margin: auto;
-}
-
 .carousel-caption {
   color: white;
   font-size: 20px;
